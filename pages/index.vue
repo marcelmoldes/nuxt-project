@@ -1,12 +1,10 @@
 <template>
   <div class="m-20">
     <template v-for="section of sections" :key="section.id">
-      <div class="hero-4 bg-gray-400" v-if="section.__component === 'components.hero'">
-        <div class="parallax-item p-6  px-40">
-          <img alt="otf" class="mt-9 shadow-2xl shadow-gray-600"
-               :src="hero.hero_image">
-        </div>
-      </div>
+      <hero-component
+          :image_url="'http://52.90.19.171:1337' + section.image.data.attributes.url"
+          v-if="section.__component === 'components.hero'"
+      />
     </template>
     <about-component :about="about"/>
     <albums-component :albums="albums"/>
