@@ -11,7 +11,7 @@
           <div class="spacer-60 spacer-sm-30"></div>
           <p class="text-anime p-0">
             {{subtitle}}
-          </p>
+          </p> <br>
           <p class="text-anime p-0">
   {{description}}
           </p>

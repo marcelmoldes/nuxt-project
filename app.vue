@@ -1,9 +1,13 @@
 <template class="">
     <NuxtLayout>
+
       <main id="main" data-barba="container">
         <NuxtPage />
       </main>
     </NuxtLayout>
+  <header-component></header-component>
+<footer-component></footer-component>
+
 </template>
 <script>
 export default defineNuxtComponent({

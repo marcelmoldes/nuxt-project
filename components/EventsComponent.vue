@@ -18,7 +18,7 @@
     </div>
 
     <div class="spacer-60  spacer-md-15"></div>
-    <div class="gigs  ">
+    <div class="gigs">
       <div v-for="event in events" :key="event" id="movement"  class="border-red-800  border mt-2 container px-20 cursor-pointer  shadow shadow-sky-50  rounded-md">
         <ul class="" >
           <li class="row gx-0 fade-in">

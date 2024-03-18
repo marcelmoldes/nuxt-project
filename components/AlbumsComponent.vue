@@ -8,10 +8,11 @@
         <div  class="swiper-wrapper">
           <div class="swiper-slide image-anime "  v-for="album in albums" :key="album">
 
-            <img
-                 class="m-20 w-80"
-                 width="30px" />
-
+            <nuxt-link :to="`/albums/${album.id}`">
+              <img :src="'http://3.85.124.220:1337' + album.attributes.image.data[0].attributes.url"
+                   class="ml-52"
+                   width="" />
+            </nuxt-link>
           </div>
         </div>
         <div class="arrows">
