@@ -5,15 +5,15 @@
       <div class="row">
         <div class="col-xl-8 offset-xl-2">
           <div class="text-anime">
-            <h4 class="purple-gradient text-xl">{{ about.title }}</h4>
+            <h4 class="purple-gradient text-xl">{{ title }}</h4>
             <hr class="mt-2 w-44">
           </div>
           <div class="spacer-60 spacer-sm-30"></div>
           <p class="text-anime p-0">
-            {{about.subtitle}}
+            {{subtitle}}
           </p>
           <p class="text-anime p-0">
-            {{about.description}}
+  {{description}}
           </p>
         </div>
       </div>
@@ -22,6 +22,6 @@
 </template>
 <script>
 export default defineNuxtComponent({
-  props: ['about']
+  props: ['title','subtitle','description']
 })
 </script>

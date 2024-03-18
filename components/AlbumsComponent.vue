@@ -7,7 +7,8 @@
       <div class="swiper discography-slider" data-delay=".2">
         <div  class="swiper-wrapper">
           <div class="swiper-slide image-anime "  v-for="album in albums" :key="album">
-            <img :src="album.album_cover"
+
+            <img
                  class="m-20 w-80"
                  width="30px" />
 

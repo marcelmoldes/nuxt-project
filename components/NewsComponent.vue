@@ -20,9 +20,11 @@
         <!-- a notices item -->
         <div v-for="article in news" :key="news" class="col-xl-4  col-md-4">
           <div class="notices-item-1 px-2">
-            <span class="date text-anime">{{ article.publish_date }}</span>
-            <h6 class="title text-anime">{{ article.title }}<br>Out Now</h6>
-            <p class="body-three text-anime">{{ article.description}}</p>
+            <span class="date text-anime">{{ article.attributes.publish_date }}</span>
+            <h6 class="title text-anime">{{ article.attributes.title }}</h6>
+
+            <p class="body-three text-anime">{{ article.attributes.subtitle}}</p>
+            <p class="body-three text-anime">{{ article.attributes.content[0].children[0].text}}</p>
             <a class=" text-gray-100 text-lg font-bold" href="#"><span
                 data-hover="View...">View more</span></a>
           </div>

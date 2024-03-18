@@ -17,20 +17,20 @@
       </div>
     </div>
 
-    <div class="spacer-60 spacer-md-15"></div>
+    <div class="spacer-60  spacer-md-15"></div>
     <div class="gigs  ">
-      <div v-for="event in events" :key="event" id="movement"  class=" border border-white mt-2 container px-20 cursor-pointer  shadow shadow-sky-50  rounded-md">
+      <div v-for="event in events" :key="event" id="movement"  class="border-red-800  border mt-2 container px-20 cursor-pointer  shadow shadow-sky-50  rounded-md">
         <ul class="" >
           <li class="row gx-0 fade-in">
             <div class="col-xl-3 col-md-3 col-12 list-area">
-              <div class="left-area"><span class="date">{{ event.event_date }}</span><span
-                  class="city">{{ event.name }}</span></div>
+              <div class="left-area"><span class="date">{{ event.attributes.event_date }}</span><span
+                  class="city">{{ event.attributes.name }}</span></div>
             </div>
             <div class="col-xl-4 col-md-4 col-12 list-area"><span class="location"><i class="fas fa-map-marker-alt"></i> {{
-                event.location
+                event.attributes.location
               }}</span></div>
             <div class="col-xl-2 col-md-2 col-12 list-area"><span class="time"><i
-                class="ri-time-line"></i>{{ event.event_time }}</span></div>
+                class="ri-time-line"></i>{{ event.attributes.event_time }}</span></div>
             <div class="col-xl-3 col-md-3 col-12 list-area"><a class="button-two" href="#">
               <div class="button-wrapper"><span data-hover="Buy Ticket">Buy Ticket</span></div>
             </a></div>
