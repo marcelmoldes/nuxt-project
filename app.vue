@@ -1,6 +1,5 @@
 <template class="">
     <NuxtLayout>
-
       <main id="main" data-barba="container">
         <NuxtPage />
       </main>

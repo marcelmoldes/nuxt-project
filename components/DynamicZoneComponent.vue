@@ -13,13 +13,20 @@
     />
     <about-component v-if="section.__component === 'components.presentation-block'"
                      :description="section.description[0].children[0].text" :subtitle="section.subtitle"
+
                      :title="section.title"/>
+    <events-grid :title="section.title" v-if="section.__component === 'components.events-grid'" :events="section.events.data"></events-grid>
     <events-component v-if="section.__component === 'components.event-calendar'" :events="section.events.data"/>
+    <news-grid v-if="section.__component === 'components.news-grid'"   :news="section.news.data"></news-grid>
     <news-component v-if="section.__component === 'components.news-section'" :news="section.news.data"/>
+ <artists-grid :title="section.title"   v-if="section.__component === 'components.artists-grid'" :artists="section.artists.data" ></artists-grid>
   </template>
 </template>
 <script>
+import EventsGrid from "~/components/EventsGrid.vue";
+
 export default defineNuxtComponent({
+  components: {EventsGrid},
   props: ['sections']
 })
 </script>
