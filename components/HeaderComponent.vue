@@ -13,7 +13,7 @@
                   <a><span data-hover="Home">Home</span></a>
                 </li>
               </NuxtLink>
-              <NuxtLink to="/albums/discography">
+              <NuxtLink to="/albums">
                 <li class="menu-item-has-children">
                   <a><span data-hover="Discography">Discography</span></a></li>
               </NuxtLink>
@@ -65,7 +65,7 @@
               <a href="index.html"><span data-hover="Home">Home</span></a>
             </li>
             </NuxtLink>
-            <NuxtLink to="/albums/discography">
+            <NuxtLink to="/albums">
             <li class="menu-item-has-children">
               <a><span data-hover="Discography">Discography</span></a></li>
               </NuxtLink>
