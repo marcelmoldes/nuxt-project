@@ -8,16 +8,20 @@
         </div>
         <div class="col-xl-6 right-area">
           <div class="link-outer">
-            <a class="link-with-arrow text-red-800 text-lg font-bold" href="#"><span
-                data-hover="View all">View all</span></a>
+            <NuxtLink to="/news">
+
+              <a class="link-with-arrow text-red-800 text-lg font-bold" href="#"><span
+                  data-hover="View all">View all</span></a>
+            </NuxtLink>
+
           </div>
         </div>
         <hr class="clip-animation">
       </div>
-      <!-- notices BOXES-->
+
       <div class="spacer-60 spacer-sm-15"></div>
       <div class="row px-0">
-        <!-- a notices item -->
+
         <div v-for="article in news" :key="news" class="col-xl-4  col-md-4">
           <div class="notices-item-1 px-2">
             <span class="date text-anime">{{ article.attributes.publish_date }}</span>

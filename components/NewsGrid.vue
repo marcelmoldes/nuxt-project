@@ -13,11 +13,13 @@
       <div class="news" >
         <div class="row gx-6 gy-5">
           <div class="col-xl-4 col-md-4" v-for="article in news" :key="news">
-            <a  class="news-item-2">
+         <nuxt-link :to="`/news/${article.id}`">
+
+           <a  class="news-item-2">
               <img :src="'http://3.85.124.220:1337' + article.attributes.news_images.data[0].attributes.url" alt="news">
               <span class="date">{{article.attributes.subtitle}}</span>
               <h6 class="title">{{article.attributes.title}} <br>Out Now</h6>
-            </a>
+            </a></nuxt-link>
           </div>
         </div>
       </div>

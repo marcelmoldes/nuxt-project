@@ -33,7 +33,11 @@
                   <a><span data-hover="News">News</span></a>
                 </li>
               </NuxtLink>
-              <li><a><span data-hover="Contact">Contact</span></a></li>
+              <NuxtLink to="/contact">
+                <li><a><span data-hover="Contact">Contact</span></a></li>
+              </NuxtLink>
+
+
             </ul>
           </nav>
         </div>
@@ -84,7 +88,9 @@
                 <a><span data-hover="News">News</span></a>
               </li>
             </NuxtLink>
-            <li><a><span data-hover="Contact">Contact</span></a></li>
+            <NuxtLink to="/contact">
+              <li><a><span data-hover="Contact">Contact</span></a></li>
+            </NuxtLink>
           </ul>
         </nav>
       </div>

@@ -4,8 +4,8 @@
     <div class="discography-page">
       <div class="container px-4">
         <div class="row g-4 g-md-5">
-          <a href="#" class="col-xl-4 col-lg-4 col-md-4 col-6 one-album" v-for="album of albums" :key="album">
-            <div class="image-anime">
+        <a href="" class="col-xl-4 col-lg-4 col-md-4 col-6 one-album" v-for="album of albums" :key="album">
+          <nuxt-link :to="`/albums/${album.id}`">    <div class="image-anime">
               <img :src="'http://3.85.124.220:1337' + album.attributes.image.data[0].attributes.url"
                    class="ml-52"
                    width="" />
@@ -13,7 +13,7 @@
             <div class="discography-infos align-center">
               <h6 class="text-anime">{{ album.attributes.name }}</h6>
               <span class="text-anime">{{ album.attributes.album_date }}</span>
-            </div>
+            </div></nuxt-link>
           </a>
         </div>
       </div>

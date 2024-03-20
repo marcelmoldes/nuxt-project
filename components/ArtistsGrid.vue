@@ -14,14 +14,18 @@
       <div class="members-1" >
         <div class="spacer-90"></div>
         <div class="row gx-5" >
+
+
+
+
           <div class="col-xl-3 member" v-for="artist in artists" :key="artist">
-            <figure>
+            <nuxt-link :to="`/artists/${artist.id}`">     <figure>
               <img :src="'http://3.85.124.220:1337' + artist.attributes.artist_images.data[0].attributes.url" alt="team">
               <figcaption>
                 <h6 class="name">{{artist.attributes.name}}</h6>
                 <span class="job subheading">Guitarist</span>
               </figcaption>
-            </figure>
+            </figure></nuxt-link>
           </div>
         </div>
       </div>
