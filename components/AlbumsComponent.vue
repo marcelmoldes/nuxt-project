@@ -5,13 +5,13 @@
       <h4 class="align-center text-anime">Discography</h4>
       <div class="spacer-150 spacer-md-90"></div>
       <div class="swiper discography-slider" data-delay=".2">
-        <div  class="swiper-wrapper">
-          <div class="swiper-slide image-anime "  v-for="album in albums" :key="album">
+        <div class="swiper-wrapper">
+          <div v-for="album in albums" :key="album" class="swiper-slide image-anime ">
 
             <nuxt-link :to="`/albums/${album.id}`">
               <img :src="'http://3.85.124.220:1337' + album.attributes.image.data[0].attributes.url"
                    class="ml-52"
-                   width="" />
+                   width=""/>
             </nuxt-link>
           </div>
         </div>
