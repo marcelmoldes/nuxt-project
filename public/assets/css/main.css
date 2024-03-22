@@ -3408,7 +3408,7 @@ progress.amplitude-song-played-progress {
     background-clip: text;
     text-fill-color: transparent;
     display: inline-block;
-    line-height: 60px;
+    line-height: 85px;
 }
 
 .orange-gradient{

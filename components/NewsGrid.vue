@@ -16,7 +16,7 @@
             <nuxt-link :to="`/news/${article.id}`">
 
               <a class="news-item-2">
-                <img :src="'http://3.85.124.220:1337' + article.attributes.news_images.data[0].attributes.url"
+                <img v-if="article.attributes.news_images.data[0].attributes.url " :src="'http://3.85.124.220:1337' + article.attributes.news_images.data[0].attributes.url"
                      alt="news">
                 <span class="date">{{ article.attributes.subtitle }}</span>
                 <h6 class="title">{{ article.attributes.title }} <br>Out Now</h6>

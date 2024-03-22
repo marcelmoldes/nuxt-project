@@ -22,7 +22,6 @@
                   <a><span data-hover="Events">Events</span></a>
                 </li>
               </NuxtLink>
-              <li><a><span data-hover="Gallery">Gallery</span></a></li>
               <NuxtLink to="/artists">
                 <li class="menu-item-has-children">
                   <a><span data-hover="Artists">Artists</span></a>
@@ -34,10 +33,8 @@
                 </li>
               </NuxtLink>
               <NuxtLink to="/contact">
-                <li><a><span data-hover="Contact">Contact</span></a></li>
+                <li class="menu-item-has-children"><a><span data-hover="Contact">Contact</span></a></li>
               </NuxtLink>
-
-
             </ul>
           </nav>
         </div>
@@ -63,7 +60,7 @@
       <div class="inner">
         <nav>
           <ul>
-            <NuxtLink to="/home">
+            <NuxtLink to="/">
             <li class="menu-item-has-children">
               <a href="index.html"><span data-hover="Home">Home</span></a>
             </li>
@@ -77,7 +74,6 @@
                 <a><span data-hover="Events">Events</span></a>
               </li>
             </NuxtLink>
-            <li><a><span data-hover="Gallery">Gallery</span></a></li>
             <NuxtLink to="/artists">
               <li class="menu-item-has-children">
                 <a><span data-hover="Artists">Artists</span></a>
