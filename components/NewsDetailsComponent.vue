@@ -3,33 +3,20 @@
     <div class="news-caption">
       <div class="container px-md-0 px-4">
         <span class="date">{{ article.publish_date }}</span>
-        <div class="spacer-15"></div>
+        <div class="spacer-45"></div>
         <h4>{{ article.title }}<br>
         </h4>
         <div class="spacer-15"></div>
         <span class="category"><p class="body-two">{{article.description}}</p></span>
       </div>
     </div>
-    <div class="image" style="background-image: url(assets/images/single-news.jpg);"></div>
   </div>
-
-  <!-- NEWS CONTENT -->
+  <NewsArtistsComponent :article="article"></NewsArtistsComponent>
   <div class="single-news-content">
     <div class="spacer-30 spacer-md-15"></div>
     <div class="container px-md-0 px-4">
-
     </div>
   </div>
-
-  <!-- NEXT CONTENT-->
-  <div class="spacer-90"></div>
-  <div class="container px-md-0 px-4">
-    <div class="next-content">
-      <span class="body-three">NEXT CONTENT</span>
-
-    </div>
-  </div>
-
   <div class="spacer-90"></div>
     <div class="container px-md-0 px-4 box-animate">
       <div class="row g-0">
@@ -60,7 +47,6 @@
         </div>
       </div>
     </div>
-
 </template>
 
 <script>

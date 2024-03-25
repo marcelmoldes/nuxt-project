@@ -1,29 +1,29 @@
 <template>
   <div>
     <div class="music-player">
-      <div class="container">
+      <div class="container ">
         <div class="spacer-120 spacer-md-60"></div>
         <div class="fiddle-player fade-down">       <div class="album-cover"></div>
           <div class="row gx-0">
             <div class="col-xl-4 col-lg-6">
-
             </div>
             <div class="   player-right">
-              <div class="playlist-header">
+              <div class="playlist-header hidden">
                 <div class="left-area">
                   <span>Music Player</span>
                   <h6 class="album-name">{{album.name}}</h6>
                 </div>
-                <div class="right-area">
+                <div class="right-area ">
                   <a href="#" class="buy-button">BUY ON ITUNES</a>
                 </div>
               </div>
-              <div class="play-list">
-                <div class="list-song amplitude-play-pause amplitude-song-container" data-id="1" :data-title="song.attributes.name" :data-album="song.attributes.mp3.data[0].attributes.name" data-cover="" :data-url="'http://3.85.124.220:1337' + song.attributes.mp3.data[0].attributes.url"  v-for="song in album.songs.data" :key="song"></div>
-
+              <div class="play-list ">
+                <div v-for="song in album.songs.data" :key="song"
+                     :data-album="song.attributes.mp3.data[0].attributes.name" :data-title="song.attributes.name"
+                     :data-url="'http://3.85.124.220:1337' + song.attributes.mp3.data[0].attributes.url" class="  list-song amplitude-play-pause amplitude-song-container"
+                     data-cover="" data-id="1"></div>
               </div>
-
-              <div class="player-controls">
+              <div class="player-controls ">
                 <div id="progress progress-container">
                   <input type="range" class="amplitude-song-slider">
                   <progress id="song-played-progress" class="amplitude-song-played-progress" value="0.5499999981030104"></progress>

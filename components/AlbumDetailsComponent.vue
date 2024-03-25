@@ -4,12 +4,9 @@
     <div class="single-album-hero">
       <div class="container px-md-0 px-3">
         <div class="row">
-
           <div class="col-xl-6 col-lg-6 col-md-6">
             <div class="outer">
-
               <div class="">
-
                 <div class="album-info">
                   <h3>{{ album.name}}</h3>
                   <div class="spacer-30"></div>
@@ -35,14 +32,15 @@
         <p class="body-two">
           {{album.description
           }}</p>
-     <MusicPlayerComponent  :album="album" ></MusicPlayerComponent>
+        <MusicPlayerComponent :album="album"></MusicPlayerComponent>
       </div>
+      <AlbumArtistsComponent :album="album"></AlbumArtistsComponent>
     </div>
   </div>
 </template>
 <script>
 export default defineNuxtComponent({
-  props: ['album']
+  props: ['album', 'artists']
 })
 </script>
 

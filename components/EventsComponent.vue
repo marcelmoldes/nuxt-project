@@ -14,12 +14,10 @@
              <a class="link-with-arrow text-red-800 text-lg font-bold" href="#"><span
                  data-hover="View all">View all</span></a>
            </NuxtLink>
-
           </div>
         </div>
       </div>
     </div>
-
     <div class="spacer-60  spacer-md-15"></div>
     <div class="gigs">
       <div v-for="event in events" :key="event" id="movement"  class="border-red-800  border mt-2 container px-20 cursor-pointer  shadow shadow-sky-50  rounded-md">
@@ -34,20 +32,17 @@
               }}</span></div>
             <div class="col-xl-2 col-md-2 col-12 list-area"><span class="time"><i
                 class="ri-time-line"></i>{{ event.attributes.event_time }}</span></div>
-
-              <div class="col-xl-3 col-md-3 col-12 list-area">
+            <div class="col-xl-3 col-md-3 col-12 list-area">
                 <a class="button-two" >
                   <div class="button-wrapper">
                 <span data-hover="Buy Ticket">See more</span>
               </div>
             </a>
               </div>
-
           </li>
-
-        </ul> </nuxt-link>
+        </ul>
+        </nuxt-link>
       </div>
-
     </div>
   </div>
 

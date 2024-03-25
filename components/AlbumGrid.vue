@@ -9,7 +9,7 @@
             <div class="image-anime">
               <img :src="'http://3.85.124.220:1337' + album.attributes.cover_album.data[0].attributes.url"
                    class="ml-52"
-                   width="" />
+                   width=""/>
             </div>
             <div class="discography-infos align-center">
               <h6 class="text-anime">{{ album.attributes.name }}</h6>

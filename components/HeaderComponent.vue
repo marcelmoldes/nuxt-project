@@ -3,7 +3,6 @@
     <div class="header-container">
       <div class="row px-0 gx-0">
         <div class="col-xl-2 rounded-lg  col-md-6 col-6">
-
         </div>
         <div class="col-xl-8 col-md-3 d-none d-xl-block align-center">
           <nav>
@@ -51,7 +50,6 @@
     </div>
   </header>
 
-
   <div class="overlay-menu">
     <div class="close">
       <i class="ri-close-line"></i>
@@ -61,14 +59,14 @@
         <nav>
           <ul>
             <NuxtLink to="/">
-            <li class="menu-item-has-children">
-              <a href="index.html"><span data-hover="Home">Home</span></a>
-            </li>
+              <li class="menu-item-has-children">
+                <a href="index.html"><span data-hover="Home">Home</span></a>
+              </li>
             </NuxtLink>
             <NuxtLink to="/albums">
-            <li class="menu-item-has-children">
-              <a><span data-hover="Discography">Discography</span></a></li>
-              </NuxtLink>
+              <li class="menu-item-has-children">
+                <a><span data-hover="Discography">Discography</span></a></li>
+            </NuxtLink>
             <NuxtLink to="/events">
               <li class="menu-item-has-children">
                 <a><span data-hover="Events">Events</span></a>
@@ -96,7 +94,7 @@
 
 </template>
 <script>
-export  default  defineNuxtComponent({
-  props:['hero']
+export default defineNuxtComponent({
+  props: ['hero']
 })
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="m-20">
-    <DynamicZoneComponent :sections="sections" v-if="sections"/>
+    <DynamicZoneComponent v-if="sections" :sections="sections"/>
   </div>
 </template>
 <script>
