@@ -28,7 +28,7 @@
             <h6 class="title text-anime">{{ article.attributes.title }}</h6>
 
             <p class="body-three text-anime">{{ article.attributes.subtitle }}</p>
-            <p class="body-three text-anime">{{ article.attributes.content[0].children[0].text }}</p>
+            <p class="body-three text-anime">{{ article.attributes.description }}</p>
             <a class=" text-gray-100 text-lg font-bold" href="#"><span
                 data-hover="View...">View more</span></a>
           </div></nuxt-link>

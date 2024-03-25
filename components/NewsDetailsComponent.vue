@@ -7,7 +7,7 @@
         <h4>{{ article.title }}<br>
         </h4>
         <div class="spacer-15"></div>
-        <span class="category"><p class="body-two">{{article.content[0].children[0].text}}</p></span>
+        <span class="category"><p class="body-two">{{article.description}}</p></span>
       </div>
     </div>
     <div class="image" style="background-image: url(assets/images/single-news.jpg);"></div>

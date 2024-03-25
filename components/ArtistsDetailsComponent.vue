@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div class="single-artist-hero">
+      <div  class="single-artist-hero">
         <div class="outer">
           <div class="inner">
             <div class="container px-4 px-md-0">
@@ -20,16 +20,13 @@
                       <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                     <div class="spacer-60"></div>
-
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="image"></div>
-      </div>
-
+        
       <div class="single-artist-content">
         <div class="container px-4 px-md-0">
           <h4>Biography</h4>
@@ -38,6 +35,8 @@
           <div class="spacer-60"></div>
 
 
+
+        </div>
         </div>
       </div>
 
