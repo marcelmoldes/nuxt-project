@@ -15,20 +15,25 @@
                 <form name="contactform" id="contactform" class="row gx-5">
                   <!-- message -->
                   <div class="col-xl-12">
-                    <textarea v-model="inquiries.message" class="inp-text" name="comments" id="comments"  placeholder="Comment"></textarea>
+                    <textarea v-model="inquiries.message" class="inp-text" name="comments" id="comments"
+                              placeholder="Comment"></textarea>
                   </div>
                   <!-- name -->
                   <div class="col-xl-12">
-                    <input  v-model="inquiries.full_name" class="inp" placeholder="Your Name" name="name" type="text" id="name">
+                    <input v-model="inquiries.full_name" class="inp" placeholder="Your Name" name="name" type="text"
+                           id="name">
                   </div>
                   <!-- email -->
                   <div class="col-xl-12">
-                    <input  v-model="inquiries.email" class="inp" placeholder="Your Email" name="email" type="text" id="email">
+                    <input v-model="inquiries.email" class="inp" placeholder="Your Email" name="email" type="text"
+                           id="email">
                   </div>
                   <!-- button -->
                   <div class="col-xl-12 form-btn text-center">
                     <div class="spacer-60"></div>
-                    <button @click="addPost"  class="button-two" type="button"><div class="button-wrapper"><span data-hover="Send Message">Send Message</span></div></button>
+                    <button @click="addPost" class="button-two" type="button">
+                      <div class="button-wrapper"><span data-hover="Send Message">Send Message</span></div>
+                    </button>
                   </div>
                 </form>
               </div>
@@ -53,9 +58,8 @@
           </div>
         </div>
       </div>
-      <div class="image" ></div>
+      <div class="image"></div>
     </div>
-
   </div>
 </template>
 <script>
@@ -64,28 +68,27 @@ export default defineNuxtComponent({
     return {
       inquiries: {
         full_name: '',
-        message:'',
-        email:''
+        message: '',
+        email: ''
       }
     }
   },
   methods: {
-    async addPost(){
-      await $fetch( 'http://api.basicocrm.com:1337/api/inquiries', {
-        method: 'POST',
-        body: {
-          message: this.inquiries.message,
-          email: this.inquiries.email,
-          full_name: this.inquiries.full_name,
-        }
-      }  );
+    async addPost() {
+      await $fetch('http://api.basicocrm.com:1337/api/inquiries', {
+            method: 'POST',
+            body: {
+              data: {
+                message: this.inquiries.message,
+                email: this.inquiries.email,
+                full_name: this.inquiries.full_name,
+              }
+            }
+          }
+      );
     }
   }
-
 })
-
-
-
 
 
 </script>
