@@ -16,7 +16,7 @@
         <div class="row gx-5" >
           <div class="col-xl-3 member" v-for="artist in artists" :key="artist">
             <nuxt-link :to="`/artists/${artist.id}`">     <figure>
-              <img :src="'http://3.85.124.220:1337' + artist.attributes.images.data[0].attributes.url" alt="team">
+              <img :src="'http://api.basicocrm.com:1337' + artist.attributes.images.data[0].attributes.url" alt="team">
               <figcaption>
                 <h6 class="name">{{artist.attributes.name}}</h6>
 

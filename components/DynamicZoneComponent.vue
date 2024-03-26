@@ -2,7 +2,7 @@
   <template v-for="section of sections" :key="section.id">
     <hero-component
         v-if="section.__component === 'components.hero'"
-        :image_url="'http://3.85.124.220:1337' + section.image.data.attributes.url"
+        :image_url="'http://api.basicocrm.com:1337' + section.image.data.attributes.url"
     />
     <albums-component
         v-if="section.__component === 'components.album-carousel'"

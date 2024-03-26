@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 mt-md-0 mt-5 album-poster">
-            <img :src="'http://3.85.124.220:1337' + album.cover_album.data[0].attributes.url">
+            <img :src="'http://api.basicocrm.com:1337' + album.cover_album.data[0].attributes.url">
           </div>
         </div>
       </div>

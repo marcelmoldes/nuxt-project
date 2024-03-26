@@ -17,7 +17,7 @@
             <div v-for="artist in album.artists.data" :key="artist" class="col-xl-3 member">
               <nuxt-link :to="`/artists/${artist.id}`">
                 <figure>
-                  <img v-if="artist.attributes.images.data" :src="'http://3.85.124.220:1337' + artist.attributes.images.data[0].attributes.url"
+                  <img v-if="artist.attributes.images.data" :src="'http://api.basicocrm.com:1337' + artist.attributes.images.data[0].attributes.url"
                        alt="team">
                   <figcaption>
                     <h6 class="name">{{ artist.attributes.name }}</h6>

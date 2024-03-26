@@ -17,7 +17,7 @@
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 mt-md-0  ">
-            <img :src="'http://3.85.124.220:1337' + artist.images.data[0].attributes.url">
+            <img :src="'http://api.basicocrm.com:1337' + artist.images.data[0].attributes.url">
           </div>
         </div>
       </div>
@@ -31,8 +31,8 @@
         <p class="body-two">{{
             artist.biography
           }}</p>
-
       </div>
+      <ArtistAlbumsGrid :artist="artist"></ArtistAlbumsGrid>
     </div>
   </div>
 </template>

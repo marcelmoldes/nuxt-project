@@ -20,7 +20,7 @@
               <div class="play-list ">
                 <div v-for="song in album.songs.data" :key="song"
                      :data-album="song.attributes.mp3.data[0].attributes.name" :data-title="song.attributes.name"
-                     :data-url="'http://3.85.124.220:1337' + song.attributes.mp3.data[0].attributes.url" class="  list-song amplitude-play-pause amplitude-song-container"
+                     :data-url="'http://api.basicocrm.com:1337' + song.attributes.mp3.data[0].attributes.url" class="  list-song amplitude-play-pause amplitude-song-container"
                      data-cover="" data-id="1"></div>
               </div>
               <div class="player-controls ">
