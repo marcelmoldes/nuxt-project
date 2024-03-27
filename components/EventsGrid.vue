@@ -25,8 +25,8 @@
                 <div class="col-xl-4 col-md-4 col-7 list-area"><span class="location"><i
                     class="fas fa-map-marker-alt"></i>{{ event.attributes.location }}</span> <span
                     class="time mobile"><i class="ri-time-line"></i>{{ event.attributes.event_time }}</span></div>
-                <div class="col-xl-2 col-md-2 d-none d-md-block list-area"><span
-                    class="time">{{ event.attributes.event_time }}<i class="ri-time-line"></i></span></div>
+                <div class="col-xl-2  col-md-2 d-none d-md-block list-area"><span
+                    class="time">{{ format(`${event.attributes.event_date} ${event.attributes.event_time}`, "HH:mm") }}<i class="ri-time-line"></i></span></div>
                 <div class="col-xl-3 col-md-3 col-12 list-area">
                   <a class="button-two" :href="`/events/${event.id}`">
                   <div class="button-wrapper"><span data-hover="See more">See more</span></div>
@@ -42,6 +42,8 @@
 </template>
 
 <script>
+import {format} from "date-fns";
+
 import formatters from "@/helpers/formatters.js";
 
 export default defineNuxtComponent({
@@ -49,9 +51,12 @@ export default defineNuxtComponent({
   computed: {
     formatters() {
       return formatters
-    }
-  },
+    },
 
+  },
+  methods: {
+    format,
+  },
 
 })
 </script>

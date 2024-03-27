@@ -10,9 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.11",
+    "@fullcalendar/vue3": "^6.1.11",
+    "@googlemaps/js-api-loader": "^1.16.6",
+    "@popperjs/core": "^2.11.8",
     "date-fns": "^3.6.0",
+    "mapkick": "^0.2.6",
     "nuxt": "^3.10.3",
     "sass": "^1.72.0",
+    "v-calendar": "^3.1.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
